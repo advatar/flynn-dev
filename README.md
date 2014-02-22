@@ -1,31 +1,13 @@
-# Flynn Dev Environment
+# Flynn Multi Host Dev Environment
 
-This repo contains a Vagrantfile/Makefile combo that sets up all of the Flynn
-components and dependencies in a working dev/test configuration.
-
-The only requirement is that you have [VirtualBox](https://www.virtualbox.org/)
-and [Vagrant](http://www.vagrantup.com/) installed.
-
-**Note:** Flynn is alpha-quality software, so things are probably broken.
-
-### Demo video
-
-[![Flynn Demo](https://s3.amazonaws.com/flynn-media/flynn_demo_2013-11-14.png)](https://s3.amazonaws.com/flynn-media/flynn_demo_2013-11-14.mp4)
+Tweaking the flynn-dev Vagrant setup for bare metal multi host deployment.
 
 ### Setup
 
 After checking out this repo, boot up the VM in Vagrant:
 
 ```text
-vagrant up
-```
-
-After the VM provisioning has finished, log in to it and run `make` to install
-the dependencies and boot up the Flynn services:
-
-```text
-vagrant ssh
-
+cd flynn-multi-host
 make
 ```
 
