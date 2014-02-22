@@ -4,7 +4,7 @@ Tweaking the flynn-dev Vagrant setup for bare metal multi host deployment.
 
 ### Setup
 
-After checking out this repo, boot up the VM in Vagrant:
+After checking out this repo:
 
 ```text
 cd flynn-multi-host
@@ -13,11 +13,9 @@ make
 
 ### Usage
 
-With the Flynn processes running, open another terminal and deploy the example
-application:
+With the Flynn processes running
 
 ```text
-vagrant ssh
 
 cd nodejs-example
 
@@ -28,7 +26,7 @@ If the deploy is successful, the example application should have one instance
 running which will be running a HTTP server:
 
 ```text
-curl http://10.0.2.15:55000
+curl http://:55000
 ```
 
 The `flynn` command line tool is used to manipulate the application.
